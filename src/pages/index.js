@@ -6,20 +6,10 @@ import { useState } from "react";
 const index = () => {
   
   const [tasks, setTask] = useState([]);
-
-  
-  
-  // const changeHandler = (e) =>{
-  //   setTitle(e.target.value);
-  //   console.log(e.target.value);
-  // }
-
-  
- 
   return (
 <>
    <div className="container text-center mt-5 rounded text-bg-primary p-3">
-   
+    {/* <h1>experiment of props</h1> */}
     <Create tasks={tasks} setTask={setTask} />
     <hr />
     <Show tasks={tasks} setTask={setTask} />
